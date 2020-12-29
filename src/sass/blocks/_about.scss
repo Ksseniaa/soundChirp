@@ -1,0 +1,16 @@
+.about {
+    background: url('../../img/backgroundsounddesign.jpg') center (center / cover) no-repeat;
+    padding: 0px 38px 140px 38px;
+    &__text{
+        margin-top: 700px;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: $main-color;
+
+    }
+
+
+}
+

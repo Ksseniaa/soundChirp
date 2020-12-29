@@ -1,0 +1,68 @@
+.contacts{
+    background-color: $main-color;
+    position: relative;
+    &__descr{
+        @include contact-text;
+    }
+    &__link{
+        &-clients{
+            list-style-type:none;
+            text-align: center;
+            a{
+                @include contact-text;
+                text-decoration: none;
+                transition: 0.6s all;
+                cursor: pointer;
+                &:hover{
+                    color: $link-color;
+                }
+        }   }
+         
+    }
+    &__social {
+        margin-top: 72px;
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        a {
+            @include contact-text;
+            text-decoration: none;
+            transition: 0.6s all;
+            cursor: pointer;
+            &:hover{
+                color: $link-color;
+            }
+        }
+    }
+    &__input{
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        text-align: center; 
+        input{
+            padding-left: 30px;
+            background-color: $main-color;
+            border: none;
+            &:focus{
+                color: #FFFEFE;
+            }
+            &::placeholder{
+                color:rgba(249, 247, 247, 0.385);
+            }
+
+        }
+        
+    }
+    &__inquiries{
+        &-email{
+            @include contact-text;
+        }
+    }
+    &__copyright{
+        margin-top: 55px;
+        @include contact-text;
+        font-size: 9px;
+    }
+    
+}
